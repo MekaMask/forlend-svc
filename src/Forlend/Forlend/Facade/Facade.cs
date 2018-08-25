@@ -115,7 +115,7 @@ namespace Forlend.Facade
             try
             {
                 var data = dac.GetLendItem(x => x.ItemId == itemid);
-
+                data.Log.OrderByDescending(x => x.ActionDate);
                 return data;
             }
             catch (Exception e)
