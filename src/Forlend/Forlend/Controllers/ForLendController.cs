@@ -58,7 +58,7 @@ namespace Forlend.Controllers
             facade.UpdateItem(request);
         }
 
-        [Route("DeleteItem")]
+        [Route("DeleteItem/{itemId}")]
         [HttpGet]
         public void DeleteItem(string itemId)
         {
